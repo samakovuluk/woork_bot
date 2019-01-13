@@ -21,7 +21,7 @@ public class Currency {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-     
+
         return String.valueOf(array.get("KZT"));
 
     }

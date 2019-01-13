@@ -15,24 +15,13 @@ public class CurrencyB extends TelegramLongPollingBot {
 
             SendMessage message = new SendMessage();
 
-            if(command.equals("/myname")){
+            if(command.equals("/getcurrency")){
 
-                System.out.println(update.getMessage().getFrom().getFirstName());
 
-                message.setText(update.getMessage().getFrom().getFirstName());
                 message.setText(new Currency().getUSDKZT());
             }
 
-            if (command.equals("/mylastname")){
 
-                System.out.println(update.getMessage().getFrom().getLastName());
-                message.setText(update.getMessage().getFrom().getLastName());
-            }
-
-            if (command.equals("/myfullname")){
-                System.out.println(update.getMessage().getFrom().getFirstName()+" "+update.getMessage().getFrom().getLastName());
-           message.setText(update.getMessage().getFrom().getFirstName()+" "+update.getMessage().getFrom().getLastName());
-            }
 
             message.setChatId(update.getMessage().getChatId());
 
