@@ -20,6 +20,7 @@ public class CurrencyB extends TelegramLongPollingBot {
                 System.out.println(update.getMessage().getFrom().getFirstName());
 
                 message.setText(update.getMessage().getFrom().getFirstName());
+                message.setText(new Currency().getUSDKZT());
             }
 
             if (command.equals("/mylastname")){
