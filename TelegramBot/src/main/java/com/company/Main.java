@@ -17,11 +17,13 @@ public class Main {
         ApiContextInitializer.init();
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
         try {
-            telegramBotsApi.registerBot(new CurrencyB());
+            telegramBotsApi.registerBot(new CurrencyBot());
 
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
+
+
 
 
     }
