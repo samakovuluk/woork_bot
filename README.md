@@ -1,1 +1,0 @@
-# woork_bot
